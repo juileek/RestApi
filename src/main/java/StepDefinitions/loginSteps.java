@@ -14,7 +14,7 @@ public class loginSteps {
     public String baseURI = "/Authenticate/Login";
 
 
-    @Given("^I got to login$")
+    @Given("^I got to login api$")
     public void i_got_to_login() {
 
         given().auth().basic(username,password).when().basePath(baseURL).baseUri(baseURI).then().statusCode(200).and().contentType("application/json");
